@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package:main": "ncc build --source-map src/main.js --out dist/main",
+    "package:post": "ncc build --source-map src/post.js --out dist/post"
   },
   "repository": {
     "type": "git",
